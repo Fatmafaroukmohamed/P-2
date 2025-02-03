@@ -548,16 +548,7 @@ section:hover{
     margin-top: -200px;
     float: left;
 }
-.home5-content-card1{
-    width: 290px;
-    height: 390px;
-    background: url(../images/ad3a803d98ee0833f853644b2552e269.jpg) ;
-    background-size: cover;
-    position: relative;
-    transform: translate(50px, 100px);
-}
 .home5-card1:hover{
-    transform:translateY(0px);
     color: rgb(212, 7, 7);
 }
 .home5-card2{
