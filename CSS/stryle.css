@@ -132,7 +132,7 @@ nav{
     letter-spacing: 3px;
     font-size: 15px;
 }
-button{
+.home-btn{
     width: 145px;
     height: 40px;
     border: 0;
