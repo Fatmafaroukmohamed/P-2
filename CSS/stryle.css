@@ -143,7 +143,6 @@ nav{
     color: rgb(235, 230, 203);
     margin-top: 20px;
     margin-left: 250px;
-    position: absolute;
 }
 .home-content:hover .home-btn{
     color: white;
