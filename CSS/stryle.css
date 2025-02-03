@@ -1,0 +1,1294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 5000px;
+    position: relative;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(220, 133, 75);
+    position: absolute;
+    top: 0;
+    z-index: 20;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color:rgb(228, 187, 159) ;
+    float: left;
+    margin-top: -45px;
+    margin-left: 20px;
+}
+.icon i{
+    padding: 9px;
+    font-size: 30px;
+    color: rgb(112, 45, 4);
+}
+.icon-title{
+    font-size: 20px;
+    color:rgb(112, 45, 4);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -40px;
+    margin-left: 80px;
+}
+.list{
+    list-style: none;
+    float: right;
+    margin-right: 500px;
+    margin-top: -20px;
+    position: relative;
+}
+.list::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    height: 109%;
+    transition: all 0.5s;
+    background-color: brown;
+    z-index: -1;
+}
+.list li{
+    display: inline-block;
+    margin-left: 25px;
+    color: rgb(0, 0, 0);
+}
+.list li a{
+    text-decoration: none;
+    color: rgb(112, 45, 4);
+    font-size: 17px;
+}
+.header-icon{
+    font-size: 20px;
+    margin-left: 1300px;
+    margin-top: 30px;
+    color:rgb(112, 45, 4);
+}
+.header-icon i{
+    margin-left: 20px;
+}
+.header-icon:hover i{
+    color: rgb(252, 76, 0);
+}
+.header2{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    margin-top: 30px;
+}
+.header2 p{
+    color: white;
+    padding: 10px;
+    word-spacing: 5px;
+    float: left;
+    margin-left: 500px;
+}
+.header2-link a{
+    color:rgb(112, 45, 4) ;
+}
+.home{
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/generative-ai-cloth-store-aesthetic-background-of-clothes-hanging-on-hangers-muted-neutral-colors-photo.jpg);
+    background-size: cover;
+    position: relative;
+}
+.home-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);   
+}
+.home-content{
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+.home-title{
+    color: rgb(216, 117, 5);
+    font-size: 40px;
+    font-family: cursive;
+}
+.home h1{
+    color: rgb(235, 190, 132);
+    font-size: 60px;
+}
+.home-p{
+    width: 500px;
+    color: rgb(235, 230, 203);
+    margin: 20px 50px;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+.home-btn{
+    overflow: hidden;
+    position: relative;
+}
+.home-btn button{
+    width: 145px;
+    height: 40px;
+    border: 0;
+    font-size: 23px;
+    text-transform: capitalize;
+    cursor: pointer;
+    background-color: rgb(96, 48, 4);
+    color: rgb(235, 230, 203);
+    margin-top: 20px;
+    margin-left: 250px;
+    position: absolute;
+    bottom: -100px;
+}
+.home-content:hover .home-btn{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+    bottom: 100px ;
+}
+.home2{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.card1{
+    width: 400px;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: 50px;
+    float: left;
+    background: url(../images/xl-isuel-105-varun-clothes-original-imagxat7ffqwtcy6.webp) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.card1 h2{
+    text-align: center;
+    margin-top: 350px;
+    color: white;
+    font-weight: 5000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.card1-link{
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+}
+.card1-link a{
+    font-size: 20px;
+    text-decoration: none;
+    color:rgb(198, 184, 172) ;
+    margin-left: 150px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.card1-a{
+    width: 80px;
+    height: 3px;
+    background-color:rgb(198, 184, 172) ;
+    margin-left: 150px ;
+}
+.card1:hover .card1-link{
+    opacity: 1;
+    background-color: rgba(0,0,0,0.6);
+}
+.card2{
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+    margin-top: 50px;
+    float: left;
+    background: url(../images/renshacka-clothes-cover-transparent-white__1085564_pe860163_s5.avif) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.card2 h2{
+    text-align: center;
+    margin-top: 350px;
+    color: white;
+    font-weight: 1000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.card2-link{
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+}
+.card2-link a{
+    font-size: 20px;
+    text-decoration: none;
+    color:rgb(198, 184, 172) ;
+    margin-left: 150px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.card2-a{
+    width: 80px;
+    height: 3px;
+    background-color:rgb(198, 184, 172) ;
+    margin-left: 150px ;
+}
+.card2:hover .card2-link{
+    opacity: 1;
+    background-color: rgba(0,0,0,0.6);
+}
+.card3{
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background: url(../images/Designer_1.jpg) no-repeat;
+    background-size: cover;
+    float: left;
+    position: relative;
+}
+.card3 h2{
+    text-align: center;
+    margin-top: 350px;
+    color: white;
+    font-weight: 5000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.card3-link{
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+}
+.card3-link a{
+    font-size: 20px;
+    text-decoration: none;
+    color:rgb(198, 184, 172) ;
+    margin-left: 150px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.card3-a{
+    width: 80px;
+    height: 3px;
+    background-color:rgb(198, 184, 172) ;
+    margin-left: 150px ;
+}
+.card3:hover .card3-link{
+    opacity: 1;
+    background-color: rgba(0,0,0,0.6);
+}
+.home3{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.home3-title h2{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+    color: rgb(74, 72, 72);
+}
+hr{
+    width: 1300px;
+    margin-left: 100px;
+    margin-top: 30px;
+    color: aliceblue;
+}
+.home3-title p{
+    margin-left: 1000px;
+    word-spacing: 40px;
+    font-size: 25px;
+    margin-top: -45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.p-line{
+    width: 80px;
+    height: 5px;
+    background-color: red;
+    border: solid 1px black;
+    margin-left: 1095px;
+    margin-top: -5px;
+}
+.home3-cards{
+    padding: 60px;
+    margin-left: 50px;
+    perspective: 1000px;
+}
+.home3-card1{
+    width: 290px;
+    height: 390px;
+    background: url(../images/young-fashion-model-stylish-beige-600nw-2382157791.webp) no-repeat ;
+    background-size: cover;
+    float: left;  
+}
+.home3-card1:hover{
+    color: rgb(212, 7, 7);
+}
+.home3-card2{
+    width: 290px;
+    height: 390px;
+    margin-left: 40px;
+    background: url(../images/eda5f6b4c87a0c04638a87a7e47d9950.jpg) no-repeat ;
+    background-size: cover;
+    float: left;
+}
+.home3-card2:hover{
+    color: rgb(212, 7, 7);
+}
+.home3-card3{
+    width: 290px;
+    height: 390px;
+    margin-left: 40px;
+    background: url(../images/01AC-EXERCISECLOTHES-wfpk-mediumSquareAt3X.jpg) no-repeat ;
+    background-size: cover;
+    float: left;
+}
+.home3-card3:hover{
+    color: rgb(212, 7, 7);
+}
+.home3-card4{
+    width: 290px;
+    height: 390px;
+    margin-left: 40px;
+    background: url(../images/Augper-Women-2-Piece-Cotton-Linen-Outfits-Casual-Shirt-Wide-Leg-Long-Pants-Sets-Tracksuit-Jumpsuit_c888dc6c-cc88-48de-9a98-2f0e2dabd839.7de58c12b68b7b1a3d8a5427fa468e00.webp) no-repeat ;
+    background-size: cover;
+    float: left;
+}
+.home3-card4:hover{
+    color: rgb(212, 7, 7);
+}
+section , .front{
+    width: 290px;
+    height: 390px;
+    background: url(../images/ethical_summer_clothing_idea_large.jpg) no-repeat;
+    background-size: cover;
+}
+section{
+    margin: auto;
+    position: relative;
+    transition: all 2s;
+    transform-style: preserve-3d;
+    opacity: 0;
+}
+.front{
+    z-index: 1;
+    position: absolute;
+    transform: rotateY(180deg);
+}
+section:hover{
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+.front-icon1{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin-top: 300px;
+    margin-left: 70px;
+    opacity: 0.8;
+    float: left;
+}
+.front-icon1 i{
+    padding: 8px 5px;
+    margin-left: 3px;
+    font-size: 30px;
+    color: rgb(26, 25, 25);
+}
+.front-icon1:hover{
+    background-color: brown;
+}
+.front-icon1:hover i{
+    color: rgb(255, 255, 255);
+}
+.front-icon2{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin-top: 300px;
+    margin-left: 0px;
+    opacity: 0.8;
+    float: left;
+}
+.front-icon2 i{
+    padding: 8px 5px;
+    margin-left: 3px;
+    font-size: 30px;
+    color: rgb(26, 25, 25);
+}
+.front-icon2:hover{
+    background-color: brown;
+}
+.front-icon2:hover i{
+    color: rgb(255, 255, 255);
+}
+.front-icon3{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin-top: 300px;
+    margin-left: 0px;
+    opacity: 0.8;
+    float: left;
+}
+.front-icon3 i{
+    padding: 8px 5px;
+    margin-left: 3px;
+    font-size: 30px;
+    color: rgb(26, 25, 25);
+}
+.front-icon3:hover{
+    background-color: brown;
+}
+.front-icon3:hover i{
+    color: rgb(255, 255, 255);
+}
+.home3-prices{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.home3-prices p{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+.home3-prices h4{
+    margin-left: 50px;
+    margin-top: 20px;
+    float: left;
+    font-size: 20px;
+}
+.home3-prices del{
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.home3-card2:hover{
+    color: rgb(212, 7, 7);
+}
+.home4{
+    width: 100vw;
+    height: 70vh;
+    background-color: rgb(241, 225, 202);
+    border: 2px solid rgb(171, 169, 169);
+}
+.home4 h2{
+    margin-left: 550px;
+    margin-top: 30px;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.arrow1{
+    margin-top: 130px;
+    margin-left: 150px;
+    font-size: 40px;
+    float: left;
+}
+.home4 p{
+    width: 850px;
+    margin-left: 350px;
+    margin-top: 100px;
+    font-size: 27px;
+    color: rgb(133, 129, 129);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.arrow2{
+    margin-top: -60px;
+    margin-left: 1350px;
+    font-size: 40px;
+    float: left;
+}
+.home4-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: url(../images/xl-isuel-105-varun-clothes-original-imagxat7ffqwtcy6.webp) no-repeat;
+    background-size: cover;
+    margin-left: 600px;
+    margin-top: 80px;
+}
+.home4-img h2{
+    width: 200px;
+    padding: 30px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+.home4-img p{
+    margin-left: 130px;
+    font-size: 20px;
+    margin-top: -20px;
+}
+.home5{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+}
+.home5 h2{
+    margin-left: 600px;
+    margin-top: 80px;
+    font-size: 40px;
+    color: rgb(21, 21, 21);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.home5 i{
+    color: rgb(85, 84, 84);
+    font-size: 35px;
+    margin-left: 60px;
+    margin-top: 250px;
+}
+.home5-cards{
+    margin-left: 140px;
+}
+.home5-card1{
+    width: 290px;
+    height: 390px;
+    background: url(../images/Untitleddesign_8.webp) ;
+    background-size: cover;
+    margin-top: -200px;
+    float: left;
+}
+.home5-content-card1{
+    width: 290px;
+    height: 390px;
+    background: url(../images/ad3a803d98ee0833f853644b2552e269.jpg) ;
+    background-size: cover;
+    position: relative;
+    transform: translate(50px, 100px);
+}
+.home5-card1:hover{
+    transform:translateY(0px);
+    color: rgb(212, 7, 7);
+}
+.home5-card2{
+    width: 290px;
+    height: 390px;
+    background: url(../images/A22A1281_1200x.webp) no-repeat;
+    background-size: cover;
+    margin-top: -200px;
+    margin-left: 20px;
+    float: left;
+}
+.home5-card2:hover{
+    color: rgb(212, 7, 7);
+}
+.home5-card3{
+    width: 290px;
+    height: 390px;
+    background: url(../images/ad3a803d98ee0833f853644b2552e269.jpg) no-repeat;
+    background-size: cover;
+    margin-top: -200px;
+    margin-left: 20px;
+    float: left;
+}
+.home5-card3:hover{
+    color: rgb(212, 7, 7);
+}
+.home5-card4{
+    width: 290px;
+    height: 390px;
+    background: url(../images/Compliant_Kids123_Additional_1_1024x1024.webp) no-repeat;
+    background-size: cover;
+    margin-top: -200px;
+    margin-left: 20px;
+    float: left;
+}
+.home5-card4:hover{
+    color: rgb(212, 7, 7);
+}
+.angle-right{
+    margin-top: -250px;
+    margin-left: -50px;
+}
+.home5-prices{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.home5-prices p{
+    margin-top: 400px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+.home5-prices h4{
+    margin-left: 50px;
+    margin-top: 20px;
+    float: left;
+    font-size: 20px;
+}
+.home5-prices del{
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.home6{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(241, 225, 202);
+    border: 2px solid rgb(171, 169, 169);
+}
+.home6 h2{
+    margin-left: 650px;
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.home6-card1{
+    width: 400px;
+    height: 400px;
+    background: url(../images/gettyimages-1268221697-1024x1024.jpg);
+    background-size: cover;
+    margin-left: 100px;
+    margin-top: 50px;
+    float: left;
+    transition: transform .2s;
+}
+.home6-card1 h3{
+    color: rgb(0, 0, 0);
+    margin-top: 460px;
+    font-size: 23px;
+}
+.home6-card1:hover h3{
+    color: rgb(215, 35, 35);
+}
+.home6-card1:hover{
+    transform: scale(1.05);
+}
+.home6-card2{
+    width: 400px;
+    height: 400px;
+    background: url(../images/OurHouse-Moda-Double-Clothes-Rail-laundry-accessories-145803-hi-res-0.webp);
+    background-size: cover;
+    margin-left: 50px;
+    margin-top: 50px;
+    float: left;
+    transition: transform .2s;
+}
+.home6-card2 h3{
+    color: rgb(0, 0, 0);
+    margin-top: 460px;
+    font-size: 23px;
+}
+.home6-card2:hover{
+    transform: scale(1.05);
+}
+.home6-card2:hover h3{
+    color: rgb(215, 35, 35);
+}
+.home6-card3{
+    width: 400px;
+    height: 400px;
+    background: url(../images/healthy-drink.jpg);
+    background-size: cover;
+    margin-left: 50px;
+    margin-top: 50px;
+    float: left;
+    transition: transform .2s;
+}
+.home6-card3 h3{
+    color: rgb(0, 0, 0);
+    margin-top: 460px;
+    font-size: 23px;
+}
+.home6-card3:hover{
+    transform: scale(1.05);
+}
+.home6-card3:hover h3{
+    color: rgb(215, 35, 35);
+}
+.home6-text1 h4{
+    color: rgb(96, 94, 94);
+    margin-top: 30px;
+    margin-left: 100px;
+    font-size: 20px;
+    float: left;
+}
+.home6-text1 p{
+    width: 400px;
+    color: rgb(99, 96, 96);
+    margin-top: 110px;
+    margin-left: -110px;
+    font-size: 15px;
+    float: left;
+}
+.home6-text2 h4{
+    color: rgb(96, 94, 94);
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 20px;
+    float: left;
+}
+.home6-text2 p{
+    width: 400px;
+    color: rgb(99, 96, 96);
+    margin-top: 110px;
+    margin-left: -110px;
+    font-size: 15px;
+    float: left;
+}
+.home6-text3 h4{
+    color: rgb(96, 94, 94);
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 20px;
+    float: left;
+}
+.home6-text3 p{
+    width: 400px;
+    color: rgb(99, 96, 96);
+    margin-top: 110px;
+    margin-left: -110px;
+    font-size: 15px;
+    float: left;
+}
+.home6-link1{
+    margin-top: 20px;
+    margin-left: 100px;
+    float: left;
+}
+.home6-link1 a{
+    color: black;
+    font-size:20px ;
+}
+.home6-link1:hover{
+    transform: scaleY(1.3);
+}
+.home6-link2{
+    margin-top: 20px;
+    margin-left: 370px;
+    color: black;
+    font-size:20px ;
+    float: left;
+}
+.home6-link2 a{
+    color: black;
+    font-size:20px ;
+}
+.home6-link2:hover{
+    transform: scaleY(1.3);
+}
+.home6-link3{
+    margin-top: 20px;
+    margin-left: 360px;
+    float: left;
+}
+.home6-link3 a{
+    color: black;
+    font-size:20px ;
+}
+.home6-link3:hover{
+    transform: scaleY(1.3);
+}
+.home7{
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+}
+.home7-icons{
+    position: relative;
+    margin-top: 100px;
+    font-size: 70px;
+    float: left;
+    color: rgb(108, 98, 87);
+    transition: all 2s;
+    transform-style: preserve-3d;
+}
+.home7-icon1-front{
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 180px;
+    margin-bottom: 1px;
+}
+.home7-icon1-back{
+    margin-left: 180px;
+    float: left;
+}
+.home7-icon1-front:hover{
+    transform: rotateX(180deg);
+}
+.home7-icon1-back h2{
+    margin-top: 10px;
+    margin-left: -60px;
+    font-size: 25px;
+    color: rgb(67, 42, 12);
+}
+.home7-icon1-back p{
+    margin-top: 10px;
+    margin-left: -50px;
+    font-size: 18px;
+    color: rgb(142, 110, 73);
+}
+.home7-icon2{
+    margin-left: 200px;
+    float: left;
+}
+.home7-icon2 h2{
+    margin-top: 10px;
+    margin-left: -40px;
+    font-size: 25px;
+    color: rgb(67, 42, 12);
+}
+.home7-icon2 p{
+    margin-top: 10px;
+    margin-left: -40px;
+    font-size: 18px;
+    color: rgb(142, 110, 73);
+}
+.home7-icon3{
+    margin-left: 200px;
+    float: left;
+}
+.home7-icon3 h2{
+    margin-top: 10px;
+    margin-left: -80px;
+    font-size: 25px;
+    color: rgb(67, 42, 12);
+}
+.home7-icon3 p{
+    margin-top: 10px;
+    margin-left: -50px;
+    font-size: 18px;
+    color: rgb(142, 110, 73);
+}
+.home7-icon4{
+    margin-left: 200px;
+    float: left;
+}
+.home7-icon4 h2{
+    margin-top: 10px;
+    margin-left: -40px;
+    font-size: 25px;
+    color: rgb(67, 42, 12);
+}
+.home7-icon4 p{
+    margin-top: 10px;
+    margin-left: -50px;
+    font-size: 18px;
+    color: rgb(142, 110, 73);
+}
+.home8{
+    width: 100vw;
+    height: 80vh;
+    background-color: rgb(52, 25, 2);
+    position: relative;
+}
+.home8-title{
+    position: absolute;
+    color: white;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    float: left;
+}
+.home8-title p{
+    margin-top: 10px;
+    word-spacing: 3px;
+}
+input{
+    width: 350px;
+    height: 50px;
+    font-size: 25px;
+    margin-left: 500px;
+    margin-top: -50px;
+    padding: 10px;
+    float: left;
+}
+button{
+    width: 200px;
+    height: 50px;
+    margin-left: 860px;
+    margin-top: -50px;
+    background-color: rgb(247, 4, 4);
+    font-size: 25px;
+    border: 0;
+    color: rgb(255, 255, 255) ;
+    float: left;
+}
+button:hover{
+    transform: scaleY(1.2);
+}
+.home8-icons{
+    margin-left: 1200px;
+    margin-top: -70px;
+    font-size: 23px;
+    float: left;
+    color: rgb(193, 169, 126);
+}
+.home8-icon1{
+    float: left;
+}
+.home8-icon1:hover{
+    color: rgb(255, 255, 255);
+}
+.home8-icon2{
+    float: left;
+    margin-left: 20px;
+}
+.home8-icon2:hover{
+    color: rgb(255, 255, 255);
+}
+.home8-icon3{
+    float: left;
+    margin-left: 20px;
+}
+.home8-icon3:hover{
+    color: rgb(255, 255, 255);
+}
+.home8-hr1{
+    width: 1200px;
+    color: rgb(136, 133, 133);
+}
+.home8-logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color:rgb(228, 187, 159) ;
+    float: left;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+.home8-logo i{
+    padding: 7px;
+    font-size: 25px;
+    color: rgb(112, 45, 4);
+}
+.home-logo-title{
+    font-size: 15px;
+    color:rgb(228, 187, 159);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+.home8-man h2{
+    margin-left: 300px;
+    margin-top: -30px;
+    font-size: 23px;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.man-link1{
+    margin-bottom: 20px;
+}
+.man-link1 a{
+    margin-left: 300px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.man-link1:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.man-link2{
+    margin-bottom: 20px;
+}
+.man-link2 a{
+    margin-left: 300px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.man-link2:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.man-link3{
+    margin-bottom: 20px;
+}
+.man-link3 a{
+    margin-left: 300px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.man-link3:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.man-link4{
+    margin-bottom: 20px;
+}
+.man-link4 a{
+    margin-left: 300px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.man-link4:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.man-link5{
+    margin-bottom: 20px;
+}
+.man-link5 a{
+    margin-left: 300px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.man-link5:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.home8-women h2{
+    margin-left: 550px;
+    margin-top: -270px;
+    font-size: 23px;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.women-link1{
+    margin-bottom: 20px;
+}
+.women-link1 a{
+    margin-left: 550px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.women-link1:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.women-link2{
+    margin-bottom: 20px;
+}
+.women-link2 a{
+    margin-left: 550px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.women-link2:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.women-link3{
+    margin-bottom: 20px;
+}
+.women-link3 a{
+    margin-left: 550px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.women-link3:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.women-link4{
+    margin-bottom: 20px;
+}
+.women-link4 a{
+    margin-left: 550px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.women-link4:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.women-link5{
+    margin-bottom: 20px;
+}
+.women-link5 a{
+    margin-left: 550px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.women-link5:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.home8-baby h2{
+    margin-left: 850px;
+    margin-top: -270px;
+    font-size: 23px;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.baby-link1{
+    margin-bottom: 20px;
+}
+.baby-link1 a{
+    margin-left: 850px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.baby-link1:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.baby-link2{
+    margin-bottom: 20px;
+}
+.baby-link2 a{
+    margin-left: 850px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.baby-link2:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.baby-link3{
+    margin-bottom: 20px;
+}
+.baby-link3 a{
+    margin-left: 850px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.baby-link3:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.baby-link4{
+    margin-bottom: 20px;
+}
+.baby-link4 a{
+    margin-left: 850px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.baby-link4:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.baby-link5{
+    margin-bottom: 20px;
+}
+.baby-link5 a{
+    margin-left: 850px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.baby-link5:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.home8-Quick h2{
+    margin-left: 1150px;
+    margin-top: -270px;
+    font-size: 23px;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Quick-link1{
+    margin-bottom: 20px;
+}
+.Quick-link1 a{
+    margin-left: 1150px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.Quick-link1:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.Quick-link2{
+    margin-bottom: 20px;
+}
+.Quick-link2 a{
+    margin-left: 1150px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.Quick-link2:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.Quick-link3{
+    margin-bottom: 20px;
+}
+.Quick-link3 a{
+    margin-left: 1150px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.Quick-link3:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.Quick-link4{
+    margin-bottom: 20px;
+}
+.Quick-link4 a{
+    margin-left: 1150px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.Quick-link4:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.Quick-link5{
+    margin-bottom: 20px;
+}
+.Quick-link5 a{
+    margin-left: 1150px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.Quick-link5:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.Quick-link6{
+    margin-bottom: 20px;
+}
+.Quick-link6 a{
+    margin-left: 1150px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: rgb(181, 176, 176);
+    text-decoration: none;
+}
+.Quick-link6:hover{
+    text-decoration:underline;
+    transform: scaleY(1.2);
+}
+.home8-hr2{
+    margin-top: 80px;
+    width: 1200px;
+    color: rgb(136, 133, 133);
+}
+.home8-end h2{
+    font-size: 17px;
+    margin-left: 400px;
+    margin-top: 15px;
+    color: rgb(172, 168, 168);
+}
