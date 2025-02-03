@@ -132,11 +132,7 @@ nav{
     letter-spacing: 3px;
     font-size: 15px;
 }
-.home-btn{
-    overflow: hidden;
-    position: relative;
-}
-.home-btn button{
+button{
     width: 145px;
     height: 40px;
     border: 0;
@@ -148,13 +144,11 @@ nav{
     margin-top: 20px;
     margin-left: 250px;
     position: absolute;
-    bottom: -100px;
 }
 .home-content:hover .home-btn{
     color: white;
     background-color: rgb(0, 0, 0);
     transition: 1s;
-    bottom: 100px ;
 }
 .home2{
     width: 100vw;
